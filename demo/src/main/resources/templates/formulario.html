@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Ahorcado</title>
+</head>
+<body>
+<h3>Configuración del Juego del Ahorcado</h3>
+
+<form method="post" action="/formulario/jugar">
+    <label>Longitud de la palabra: </label>
+    <input type="text" name="longitud"/><br>
+    <label>Número máximo de intentos: </label>
+    <input type="text" id="intento" name="intento"/><br>
+    <label for="tema">Tema del juego:</label>
+
+    <select name="tema" id="tema">
+        <option value="animales">Animales</option>
+        <option value="frutas">Frutas</option>
+        <option value="paises">Paises</option>
+    </select><br>
+
+    <input type="submit" value="Iniciar juego"/>
+</form>
+</body>
+</html>
